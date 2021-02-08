@@ -75,6 +75,7 @@
         border:1px solid lightcoral;
         margin:5px auto 0 auto;
         transition: 200ms;
+        
     }
 
     nav a:hover:after{
@@ -103,6 +104,8 @@
         width:50%;
         border:2px solid #FFF;
         margin:10px 0;
+        background: #FFF;
+
     }
 
     .apresentation .box-apresentation p{
@@ -259,6 +262,8 @@
         display:block;
         width:35%;
         margin:20px 0 ;
+        background: #FFF;
+
 
     }
 
@@ -288,6 +293,8 @@
     width:50%;
     border:2px solid #FFF;
     margin:10px 0;
+        background: #FFF;
+
 }
 
 .training .training-desc p{
@@ -344,6 +351,8 @@
         width:20%;
         border:2px solid #FFF;
         margin:10px auto;
+        background: #FFF;
+
     }
 
     .start .cont-desc p{
@@ -402,6 +411,8 @@
         width:50%;
         border:2px solid #FFF;
         margin:10px 0;
+        background: #FFF;
+
     }
     
     .modal .text p{
@@ -510,6 +521,264 @@
 
 @media screen and (min-width: 768px) {
     
+    /** Apresentation section **/
+    .apresentation{
+        height:70vh;
+        flex-direction: row;
+    }
+    .apresentation .box-apresentation{
+        flex:1;
+    }
+    .apresentation .box-apresentation h1{
+        font-size: 3.5rem;
+    }
+
+    .apresentation .box-apresentation h1:after{
+        height:4px;
+    }
+
+    .apresentation .box-apresentation p{
+        font-size: 1.2rem;
+    }
+    
+    .apresentation .box-apresentation a{
+        font-size:1.2rem;
+    }
+
+    .apresentation .image-apresentation{
+        flex:1;
+    }
+
+
+    /** WORK **/
+    .work{
+        flex-direction:row;
+    }
+
+    .work .cont-work {
+        width:250px;
+        height:150px;
+        margin:0 10px 20px;
+    }
+    .work .cont-work .icon{
+        width:50px;
+        height:50px;
+    }
+    .work .cont-work img{
+        width:30px;
+    }
+
+    .work .cont-work h4{
+       font-size:1.3rem;
+    }
+
+
+
+    /**ABOUT**/
+    .about{
+        flex-direction:row;
+    }
+    .about-title{
+        flex:1;
+        padding:15px 0;
+    }
+     .about-title h2{
+         font-size: 1.2rem;
+     }
+
+     .about-title h1{
+        font-size: 2.7rem;
+        line-height: 45px;
+    }
+
+    .about div {
+        flex:1;
+    }
+
+    .about div p{
+        font-size:0.9rem;
+    }
+
+    /** Visao **/
+
+    .visao{
+        padding:30px 30px;
+        position:relative;
+        display:flex;
+    }
+
+    .visao .image-visao{
+        width:100%;
+        height: 350px;
+        flex:1;
+    }
+
+    
+    .visao .desc-visao{
+        flex:1;
+        height: 300px;
+        left: -40px;
+        top:30px;
+    }
+
+    .visao .desc-visao h1{
+        font-size: 1.5rem;
+        line-height: 29px;
+    }
+
+
+/** Training section **/
+.training{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    padding:0 30px;
+    background:linear-gradient(to bottom, #FF96B4,45%,#A988F3);
+}
+.training .training-desc {
+    flex:1;
+}
+.training .training-desc h1{
+    font-size: 3.3rem;
+}
+
+.training .training-desc h1:after{
+    height: 4px;
+}
+
+
+.training .training-desc a{
+    padding:10px 25px;
+    font-size:1.3rem;
+}
+
+.training .training-image{
+    flex:1;
+}
+
+    /* Start */
+
+    .start{
+        width:100%;
+        padding:30px;
+        background: #292D33;
+        display:flex;
+        flex-direction:column;
+    }
+
+    .start .cont-desc{
+        padding:15px 0;
+        text-align:center;
+    }
+
+    .start .cont-desc h1{
+        font-size:2.5rem;
+    }
+
+    .start .cont-desc h1:after{
+        height:4px;
+    }
+
+    .start .cont-desc p{
+        margin-bottom:20px;
+        font-size:1.3rem;
+    }
+
+    .start .cont-image{
+        width:80%;
+        margin:0 auto;
+    }
+
+    .start .cont-image img{
+        width:100%;
+        height: 500px;
+    }
+
+    .start .text{
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+    }
+
+    .start .cont-image .text strong{
+        font-size:1.5rem;
+    }
+
+    .start .text ul{
+        padding-left:5px;
+        font-size: 1.2rem;
+    }
+
+
+    /** Modal **/
+
+    .modal{
+        flex-direction: row;
+    }
+    
+    .modal .text{
+        flex:1;
+    }
+
+    .modal .text h1{
+        font-size: 3.2rem;
+    }
+    
+    .modal .text h1:after{
+        content:'';
+        display:block;
+        width:50%;
+        border:2px solid #FFF;
+        margin:10px 0;
+        background: #FFF;
+
+    }
+    
+    .modal .text p{
+        margin:10px 0 30px 0;
+        color: #FFF;
+        line-height: 25px;
+    }
+    
+    .modal .text a{
+        padding:10px 25px;
+        font-size:1.3rem;
+    }
+    
+    .modal .modal-image{
+        flex:1;
+    }
+    
+    /* Contact */
+
+    .contact .contact-text p{
+        font-size:1.5rem;
+    }
+
+
+    .contact .contact-image{
+        width:80%;
+        margin:0px auto 15px auto;
+    }
+
+
+
+    .logo-footer h1{
+        font-size:2.9rem;
+    
+    }
+
+
+    .logo-footer .redes a{
+        font-size:1.3rem;
+    }
+
+    .logo-footer p{
+        width:500px;
+        margin:0 auto;
+    }
+
+
 }
 
 @media screen and (min-width: 992px) {
