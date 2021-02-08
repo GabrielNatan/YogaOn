@@ -787,9 +787,118 @@
 
 
 @media screen and (min-width: 1200px) {
+    /** Apresentation section **/
+    
+    .apresentation .box-apresentation{
+        padding-left:60px;
+    }
+    
+
+
+    /**ABOUT**/
+    .about{
+        padding: 60px;
+    }
+
+     .about-title h1{
+        font-size: 3.2rem;
+        line-height: 55px;
+    }
+
+    .about div {
+        padding:0 15px;
+    }
+
+    .about div p{
+        font-size:1.1rem;
+    }
+ 
+
+   /** Visao **/
+
+    .visao .desc-visao h1{
+        font-size: 2.3rem;
+        line-height: 35px;
+    }
+
+    .visao .desc-visao p{
+        font-size: 1.1rem;
+        line-height: 25px;
+    }
+
+/** Training section **/
+.training .training-desc {
+    padding:60px;
+    flex:1;
+}
+
+/* Start */
+
+
+.start .cont-desc h1{
+    font-size:3rem;
+}
+
+.start .cont-desc h1:after{
+    height:4px;
+    width:35%;
+}
+
+.start .cont-desc p{
+    font-size:1.5rem;
+}
+
+.start .cont-image{
+    width:80%;
+    margin:0 auto;
+    display:flex;
+}
+
+.start .cont-image img{
+    flex:1;
+    height: 500px;
+}
+
+.start .text{
+    flex:1;
+}
+
+/** Modal **/
+
+.modal{
+    flex-direction: row;
     
 }
 
+.modal .text{
+    padding-left:60px;
+    flex:1;
+}
+
+
+    /* Contact */
+
+    .contact .contact-text p{
+        font-size:1.5rem;
+        width:900px;
+        margin:auto;
+    }
+
+
+    .contact .contact-image{
+        width:70%;
+        height:350px;
+    }
+
+    .contact .contact-image img{
+        height:100%;
+    }
+
+
+}
+
 @media screen and (min-width: 1400px) {
-    
+ 
+   
+
 }
