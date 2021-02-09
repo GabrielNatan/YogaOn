@@ -6,6 +6,61 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+@keyframes showUp{
+    from{
+        opacity:0;
+        transform: translateY(50px);
+    }
+    to{
+        opacity:1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes showDown{
+    from{
+        opacity:0;
+        transform: translateY(-50px);
+    }
+    to{
+        opacity:1;
+        transform: translateY(0px);
+    }
+}
+@keyframes showLeft{
+    from{
+        opacity:0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity:1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes showRight{
+    from{
+        opacity:0;
+        transform: translateX(-50px);
+    }
+    to{
+        opacity:1;
+        transform: translateX(0px);
+    }
+}
+.activeUp{
+    animation: showUp 700ms linear forwards ;
+}
+.activeDown{
+    animation: showDown 700ms linear forwards ;
+}
+.activeLeft{
+    animation: showLeft 700ms linear forwards ;
+}
+.activeRight{
+    animation: showRight 700ms linear forwards ;
+}
+
 @media screen and (min-width: 320px) {
     header{
         width:100%;
