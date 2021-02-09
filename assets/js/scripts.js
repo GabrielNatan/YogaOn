@@ -1,7 +1,9 @@
 var items = [{tag:'textModal',classe:'activeRight'},
              {tag:'image-visao',classe:'activeRight'},
-             {tag:'desc-visao',classe:'activeLeft'}
-            
+             {tag:'desc-visao',classe:'activeLeft'},
+             {tag:'training-desc',classe:'activeRight'},
+             {tag:'training-image',classe:'activeLeft'},
+             {tag:'modal-image', classe:'activeLeft'}
             ]
 
 const debounce = function(func, wait, immediate) {
@@ -24,9 +26,8 @@ function addActiveClass(items){
     items.map(item=>{
         let windowHeight = window.pageYOffset;
         let selectedItem = document.querySelector(`#${item.tag}`);
-        console.log(selectedItem)
         
-        windowHeight > (selectedItem.offsetTop + 600) && selectedItem.classList.add(`${item.classe}`)
+        windowHeight > (selectedItem.offsetTop - 100) && selectedItem.classList.add(`${item.classe}`)
     })
 }
 
